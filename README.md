@@ -1,64 +1,103 @@
-# Ex--2-AWS-Account-setup-and-S3-creation
-~~~
-Name : Selva Jobin S
-reg.no : 212223220102
-~~~
-# Introduction
+# Ex.1 Cloud account setup and services overview in AWS
 
-In this lab, we are going to be introduced to one of the famous Cloud Service providers, Amazon Web Services (AWS). We will work on Amazon Simple Storage Service (S3), which provides storage through web service interfaces (REST, SOAP, and BitTorrent). In S3, the data is stored in the form of buckets. Buckets serve as root folders where we can add, create, or upload files and folders. We can create multiple buckets for different purposes, and each bucket can have different access control policies.
+### Aim:
 
-## Objectives
+To create an cloud account in AWS and to explore all of its services. 
 
-- Create a Bucket in Amazon S3.
-- Add Objects (files and folders) to the bucket.
-- Access, move, download, and delete the objects.
-- Delete the Bucket.
+### Procedure
 
-## Illustration
+#### Step 1: Go to the AWS Website
 
-### Step 1: Choose S3 Service
+Visit https://aws.amazon.com
 
-Choose the S3 service from the list of services provided by AWS.
+Click “Create an AWS Account” in the top right corner.
 
-(![image](https://github.com/user-attachments/assets/d641bb01-a8f8-405c-914b-5ff7840a539d))
+#### Step 2: Enter Account Information
 
-### Step 2: Create a Unique Bucket
+Email address – Use a valid email you have access to.
 
-After selecting the S3 service, click on the "Create Bucket" button on the page. The bucket name must be unique, contain no uppercase letters, and have no special characters. If you enter any of these, an error will display, preventing the bucket from being created.
+Password – Create a strong password.
 
-![image](https://github.com/user-attachments/assets/6a447548-5dbb-4bee-be9a-14823d0bf6b0)
-![image](https://github.com/user-attachments/assets/8f0c2e75-1106-4666-b67d-6335aab13ab8)
-![image](https://github.com/user-attachments/assets/216498f3-1fbd-457e-b930-9589d28be372)
-![image](https://github.com/user-attachments/assets/9ed831a6-3a1c-4aee-90d9-d871af80bd6c)
-![image](https://github.com/user-attachments/assets/e32fc9f3-c82a-4b72-8b10-7a0477f9ccd6)
+AWS account name – This is the name you want to associate with your AWS account (e.g., your name or company name).
 
-For region selection, choose a region from the available list. It is recommended to select a region nearby your location for higher availability. In this lab, I selected Sydney, as it is near my country, New Zealand. Remember to provide a unique bucket name with no special characters or uppercase letters.
+#### Step 3: Choose Account Type
 
-### Step 3: Upload Files to the Bucket
+Personal or Professional – Select based on how you plan to use AWS.
 
-Now, I have uploaded some files into the bucket I just created. There are no restrictions on uploading file types, but the size of each file must be less than 5 terabytes.
+Fill in your contact information (name, address, phone number).
 
-![image](https://github.com/user-attachments/assets/b4aa897c-f2e2-4473-8f90-595b530529e9)
-![image](https://github.com/user-attachments/assets/3a137296-7bce-474e-9aee-90f1270da0b5)
+#### Step 4: Enter Payment Information
 
-You can upload files of any extension, folders, and subfolders. The images below explain that you can drag and drop files or select them from your computer. After uploading a file, you can download, cut, copy, make it public, rename, or delete it. Making a file public means everyone can access it, and you will receive a link (e.g., `https://s3-ap-southeast-2.amazonaws.com/...`) to share it.
+Provide credit/debit card details.
 
-![image](https://github.com/user-attachments/assets/5f1fee62-d590-494f-8345-aeb80745e810)
-![image](https://github.com/user-attachments/assets/b3030041-ce14-43a8-8e6c-4c26a875d52e)
+Note: You won’t be charged immediately. AWS offers a Free Tier, but entering card details is mandatory.
 
-### Step 4: Upload a Folder
+#### Step 5: Verify Your Identity
 
-You can also upload a folder to the bucket. If your local folder contains subfolders and data, all data inside the parent folder will be uploaded. The images below show how to upload a folder by dragging and dropping or browsing.
+Enter your phone number.
 
-![image](https://github.com/user-attachments/assets/f0ad8c4e-0d66-490f-a4e0-3ecc1d39ba25)
+AWS will send a verification code via call or text.
 
-### Step 5: Delete the Bucket
+Enter the code to confirm your identity.
 
-To delete a bucket, you must retype the bucket name. This policy is implemented by Amazon to confirm your action because deleting a bucket can remove large amounts of data.
+#### Step 6: Choose a Support Plan
 
-![image](https://github.com/user-attachments/assets/c09b5618-9d48-4d70-b59a-e76dd9c163f6)
-![image](https://github.com/user-attachments/assets/a90ffaae-5bbd-4306-9227-f6f4dd715395)
+Choose one of the following:
 
-## Result
+oBasic Support (Free)
 
-Successfully created, managed, and deleted an S3 bucket on AWS, demonstrating the ability to upload, access, and control objects within Amazon S3.
+oDeveloper Support
+
+oBusiness Support
+
+oEnterprise Support
+
+For most beginners, select Basic Support.
+
+#### Step 7: Complete the Sign-Up
+
+After reviewing all the details, click "Sign Up".
+
+You’ll receive a confirmation email once your account is activated (usually within a few minutes).
+
+#### Step 8: Sign In to AWS Console
+
+Go to https://console.aws.amazon.com
+
+Log in using your email and password to start using AWS services.
+
+
+### Create a user with administrative access
+
+•After you sign up for an AWS account, secure your AWS account root user, enable AWS IAM Identity Center, and create an administrative user so that you don't use the root user for everyday tasks.
+
+### Secure your AWS account root user
+
+Sign in to the AWS Management Console (https://console.aws.amazon.com) as the account owner by choosing Root user and entering your AWS account email address. On the next page, enter your password.
+
+Turn on multi-factor authentication (MFA) for your root user.
+
+### Create user with administrative access
+
+Enable IAM Identity Center.
+
+In IAM Identity Center, grant administrative access to a user.
+
+### Sign in as the user with administrative access
+
+To sign in with your IAM Identity Center user, use the sign-in URL that was sent to your email address when you created the IAM Identity Center user.
+
+### Services Overview:
+
+Explore all the available services in AWS platform.
+
+### Snap Shot:
+
+![Screenshot 2025-04-30 045913](https://github.com/user-attachments/assets/f0edbea0-c6ca-4303-8e9b-010df43ef3a8)
+
+
+![Screenshot 2025-04-30 045959](https://github.com/user-attachments/assets/a65a20e6-57eb-4162-9eb7-d2c030a101ed)
+### Result:
+
+Thus, a cloud account was created in AWS platform and all the services were explored.
+
