@@ -1,107 +1,103 @@
-# Ex.1 Cloud account setup and services overview in AWS
-
-### Name:Selva Jobin
-
-### Reg No:212223220102
+# Ex.2 Cloud storage creation (S3) and launching an (Ec2) instance in AWS
 
 ### Aim:
 
-To create an cloud account in AWS and to explore all of its services. 
+To create a Simple Storage Service (S3) in AWS and to launch an EC2 instance in AWS. 
 
 ### Procedure
 
-#### Step 1: Go to the AWS Website
+# a)Steps to Create a first S3 Bucket:
 
-Visit https://aws.amazon.com
+### Step 1: Sign in to the AWS Management Console
 
-Click “Create an AWS Account” in the top right corner.
+Go to https://console.aws.amazon.com/s3.
 
-#### Step 2: Enter Account Information
+### Step 2: Open the S3 Service
 
-Email address – Use a valid email you have access to.
+In the console, type S3 in the search bar and select S3 to open the service dashboard.
 
-Password – Create a strong password.
+### Step 3: Create Bucket
 
-AWS account name – This is the name you want to associate with your AWS account (e.g., your name or company name).
+Click the Create bucket button.
 
-#### Step 3: Choose Account Type
+### Step 4: Configure Bucket Settings
 
-Personal or Professional – Select based on how you plan to use AWS.
+Bucket name: Choose a globally unique name.
 
-Fill in your contact information (name, address, phone number).
+AWS Region: Select the region where you want to store your data.
 
-#### Step 4: Enter Payment Information
+### Step 5: Object Ownership
 
-Provide credit/debit card details.
+Choose between:
 
-Note: You won’t be charged immediately. AWS offers a Free Tier, but entering card details is mandatory.
+ACLs disabled (recommended) – Bucket owner has full control.
 
-#### Step 5: Verify Your Identity
+ACLs enabled – Control access via access control lists.
 
-Enter your phone number.
+### Step 6: Block Public Access Settings
 
-AWS will send a verification code via call or text.
+By default, all public access is blocked. Leave it as-is unless you need public access.
 
-Enter the code to confirm your identity.
+### Step 7: Bucket Versioning (optional)
 
-#### Step 6: Choose a Support Plan
+Choose whether to enable versioning for objects in the bucket.
 
-Choose one of the following:
+### Step 8: Encryption (optional)
 
-oBasic Support (Free)
+Select encryption options (SSE-S3, SSE-KMS, or none).
 
-oDeveloper Support
+### Step 9: Advanced Settings (optional)
 
-oBusiness Support
+Add tags, configure logging, etc.
 
-oEnterprise Support
+### Step 10: Create the Bucket
 
-For most beginners, select Basic Support.
+Click Create bucket at the bottom of the page.
 
-#### Step 7: Complete the Sign-Up
+### b)i. Steps to launch an EC2 Instance
 
-After reviewing all the details, click "Sign Up".
+1.Go to the EC2 Dashboard in AWS Console.
 
-You’ll receive a confirmation email once your account is activated (usually within a few minutes).
+2.Click on “Launch Instance”.
 
-#### Step 8: Sign In to AWS Console
+3.Choose an Amazon Machine Image (AMI) (e.g., Amazon Linux).
 
-Go to https://console.aws.amazon.com
-
-Log in using your email and password to start using AWS services.
+4.Select an instance type (e.g., t2.micro for Free Tier).
 
 
-### Create a user with administrative access
+5.Create or choose a key pair for SSH access.
 
-•After you sign up for an AWS account, secure your AWS account root user, enable AWS IAM Identity Center, and create an administrative user so that you don't use the root user for everyday tasks.
+6.Configure network settings (use default VPC/subnet).
 
-### Secure your AWS account root user
+7.Configure storage (default root volume is fine).
 
-Sign in to the AWS Management Console (https://console.aws.amazon.com) as the account owner by choosing Root user and entering your AWS account email address. On the next page, enter your password.
+8.Review the settings and click “Launch Instance”.
 
-Turn on multi-factor authentication (MFA) for your root user.
-
-### Create user with administrative access
-
-Enable IAM Identity Center.
-
-In IAM Identity Center, grant administrative access to a user.
-
-### Sign in as the user with administrative access
-
-To sign in with your IAM Identity Center user, use the sign-in URL that was sent to your email address when you created the IAM Identity Center user.
-
-### Services Overview:
-
-Explore all the available services in AWS platform.
-
-### Snap Shot:
-
-![Screenshot 2025-04-30 045913](https://github.com/user-attachments/assets/f0edbea0-c6ca-4303-8e9b-010df43ef3a8)
+9.Wait for the instance to enter the running state.
 
 
-![Screenshot 2025-04-30 045959](https://github.com/user-attachments/assets/a65a20e6-57eb-4162-9eb7-d2c030a101ed)
+### c)Step 3: Connect to Your Instance
+
+Linux: Use SSH command with your .pem key.
+
+Windows: Use RDP with decrypted admin password.
+
+
+### d)Steps to Clean Up (Terminate the Instance)
+
+1.Go to EC2 Instances.
+
+2.Select your instance → Instance State → Terminate.
+
+### Snap Shots:
+![Screenshot 2025-04-30 053023](https://github.com/user-attachments/assets/0bf3d0a9-1cd3-4afa-8059-8b767c4ad914)
+
+![Screenshot 2025-04-30 053033](https://github.com/user-attachments/assets/05fbf569-4185-475c-b200-7e40fa24bf89)
+
+
 ### Result:
 
-Thus, a cloud account was created in AWS platform and all the services were explored.
+Thus, a Simple Storage Service (S3) and EC2 (Elastic Compute Cloud) - instance has been successfully created and launched in AWS
+
+
 
