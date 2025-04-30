@@ -1,5 +1,9 @@
 # Ex.1 Cloud account setup and services overview in AWS
 
+### Name:Selva Jobin
+
+### Reg No:212223220102
+
 ### Aim:
 
 To create an cloud account in AWS and to explore all of its services. 
